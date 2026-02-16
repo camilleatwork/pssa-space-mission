@@ -1,6 +1,6 @@
 # 🚀 PSSA Space Mission
 
-A fun, space-themed test prep app for 3rd graders preparing for the Pennsylvania System of School Assessment (PSSA). Built for my twin sons with assistance from Claude Opus 4.6.
+A fun, space-themed test prep app for 3rd graders preparing for the Pennsylvania System of School Assessment (PSSA). Built for my twin sons with assistance from AI (Claude Opus 4.6).
 
 ## What's Inside
 
