@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  background: #080b1c;
+  font-family: 'Nunito', sans-serif;
+}
+
+button:hover {
+  filter: brightness(1.08);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 140, 255, 0.3);
+  border-radius: 3px;
+}
+
+textarea:focus {
+  border-color: #4a7aff !important;
+  outline: none;
+}
