@@ -63,9 +63,66 @@ const QUESTIONS = {
     { id: "ec10", question: "Which word is spelled correctly?", options: ["becuz", "becaus", "because", "becuse"], correct: 2, explanation: "Because is the correct spelling. This is a word you will use a lot in writing, especially on the PSSA when they ask you to explain your answer!", category: "Grammar", difficulty: 1 },
   ],
   ela_short_answer: [
-    { id: "esa1", passageId: "p1", question: "Based on the passage, explain ONE thing Luna learned from her grandmother about moonflowers. Use details from the passage to support your answer.", sampleAnswer: "Luna learned that moonflowers open at night to attract moths. Her grandmother explained that since moths come out at night, the flowers adapted to open when the sun goes down, and their white petals help moths find them in the dark.", tips: "For short answer questions:\n- Start by restating part of the question\n- Use specific details from the passage\n- Write at least 2-3 sentences\n- Check your spelling and punctuation", category: "Short Answer", difficulty: 2 },
-    { id: "esa2", passageId: "p3", question: "What lesson did Marco and Ava learn from the kite contest? Use details from the story to support your answer.", sampleAnswer: "Marco and Ava learned that a good design does not have to look the prettiest. It has to work the best. Their kite was made from a garbage bag and looked plain, but it was light and flew higher than all the fancy store-bought kites.", tips: "Remember the writing checklist:\n- Did I answer the EXACT question asked?\n- Did I include details from the passage?\n- Did I write in complete sentences?\n- Did I check for capital letters and periods?", category: "Short Answer", difficulty: 2 },
-    { id: "esa3", passageId: "p4", question: "Choose ONE animal from the passage and explain how it uses camouflage. Use details from the passage in your answer.", sampleAnswer: "The Arctic fox uses camouflage by changing the color of its fur with the seasons. In winter, its fur turns white to match the snow, and in summer, its fur turns brown to blend in with rocks and dirt. This helps the fox hide from larger animals that want to eat it.", tips: "When the question says choose ONE, pick the one you remember the most about! Then use details straight from the passage.", category: "Short Answer", difficulty: 2 },
+    { id: "esa1", passageId: "p1", question: "Explain how Luna shows that she is curious about moonflowers throughout the passage. Use details from the passage to support your answer.", category: "Short Answer", difficulty: 2,
+      keywords: ["curious", "question", "asked", "why", "journal", "draw", "write", "observed", "visit", "every evening", "night", "moth", "learn", "wonder"],
+      keywordMin: 3,
+      passagePhrases: ["Luna loved her grandmother's garden", "Every evening, they would walk between the rows", "Some flowers only bloom at night", "Some plants have adapted to attract moths", "she started a journal to draw the moonflowers", "the flowers closed again each morning and opened again each night, like tiny white umbrellas"],
+      sampleAnswer: "Luna shows she is curious about moonflowers because she asks questions and wants to learn more. When Grandma showed her the moonflower, Luna asked 'Why does it do that?' which shows she wanted to understand how it works. Luna was so curious that she started a journal to draw the moonflowers and write about what she observed. She also kept visiting the garden every evening to watch them, which shows her curiosity did not stop after just one night.",
+      tips: "The 3-Point Answer Formula:\n1. RESTATE: Start by turning the question into your answer\n2. EXPLAIN: Answer in YOUR OWN words\n3. PROVE IT: Use specific details from the passage\n\nIMPORTANT: Do NOT just copy sentences from the passage! Use your own words and then refer to details from the text.",
+      scoredExamples: {
+        three: { label: "3 Points (Great!)", response: "Luna shows she is curious about moonflowers because she keeps asking questions and wanting to learn more. In the passage, she asks 'Why does it do that?' when she sees the petals open. This shows she wanted to understand how the flower works. She was so curious that she started a journal to draw and write about what she saw. She also visited the garden every evening to keep watching. All of these details show that Luna was very curious.", why: "This answer restates the question, explains the answer in the student's own words, and uses multiple specific details from the passage as proof." },
+        two: { label: "2 Points (Okay)", response: "Luna is curious because she asked her grandma about the flowers. She also started a journal.", why: "This answer is on the right track and mentions some details, but it does not give enough specific information from the passage. It could explain MORE about what Luna did and why it shows curiosity." },
+        one: { label: "1 Point (Needs work)", response: "Luna loved her grandmother's garden. Every evening, they would walk between the rows of flowers together. She started a journal to draw the moonflowers.", why: "This answer mostly copies sentences straight from the passage instead of using the student's own words. Remember: copying the passage will only get you 1 point! You need to explain the answer in YOUR words." }
+      }
+    },
+    { id: "esa2", passageId: "p3", question: "Explain how Marco's feelings change from the beginning of contest day to the end. Use details from the story to support your answer.", category: "Short Answer", difficulty: 2,
+      keywords: ["nervous", "worried", "plain", "fancy", "happy", "proud", "excited", "won", "winner", "high-fived", "light", "flew", "highest", "change", "feeling", "beginning", "end"],
+      keywordMin: 3,
+      passagePhrases: ["Marco and his sister Ava wanted to win", "Marco felt nervous", "Ours looks plain", "It doesn't matter how it looks", "It matters how it flies", "Marco and Ava's kite shot up fast because it was so light", "We have a winner", "a good design doesn't have to be the prettiest"],
+      sampleAnswer: "At the beginning of contest day, Marco felt nervous because their kite looked plain compared to the fancy store-bought kites. He whispered 'Ours looks plain' which shows he was worried they would not win. But by the end, Marco felt happy and proud because their kite flew the highest. He and Ava high-fived when the judge announced they won. His feelings changed from nervous to excited because their simple design actually worked the best.",
+      tips: "The 3-Point Answer Formula:\n1. RESTATE: Start by turning the question into your answer\n2. EXPLAIN: Answer in YOUR OWN words\n3. PROVE IT: Use specific details from the passage\n\nThis question asks about CHANGE - make sure you talk about the beginning AND the end!",
+      scoredExamples: {
+        three: { label: "3 Points (Great!)", response: "Marco's feelings change a lot during contest day. At first, he felt nervous because he thought their kite looked plain compared to the fancy ones. He even whispered 'Ours looks plain' to his sister. But at the end, Marco felt proud and happy because their kite flew the highest and won the contest. He and Ava high-fived to celebrate. Marco learned that what matters is how well something works, not how it looks.", why: "This answer clearly explains BOTH feelings (nervous at first, then happy), uses specific details from the passage as proof, and explains WHY the feelings changed." },
+        two: { label: "2 Points (Okay)", response: "Marco was nervous at first because the other kites looked better. Then he was happy because they won.", why: "This answer mentions both feelings but does not include enough specific details from the passage. Adding quotes or specific examples would make it stronger." },
+        one: { label: "1 Point (Needs work)", response: "Marco felt nervous on contest day.", why: "This only talks about ONE feeling and does not explain how his feelings CHANGED. The question asked about the change from beginning to end, so you need to talk about both." }
+      }
+    },
+    { id: "esa3", passageId: "p4", question: "The passage states that the octopus may be the 'best disguise artist of all.' Explain why the author thinks the octopus is better at camouflage than the other animals in the passage. Use details from the passage to support your answer.", category: "Short Answer", difficulty: 2,
+      keywords: ["octopus", "color", "texture", "skin", "change", "second", "fox", "walking stick", "better", "both", "bumpy", "smooth", "coral", "sand", "camouflage", "disguise"],
+      keywordMin: 3,
+      passagePhrases: ["Many animals use camouflage to hide", "The Arctic fox changes color with the seasons", "The walking stick insect looks exactly like a small twig", "It can change both its color and the texture of its skin in less than a second", "An octopus resting on a bumpy coral reef can make its skin look bumpy"],
+      sampleAnswer: "The author thinks the octopus is the best disguise artist because it can do more than the other animals. The Arctic fox can only change its fur color, and the walking stick insect cannot change at all - it always looks like a twig. But the octopus can change both its color AND the texture of its skin in less than a second. It can look bumpy on a coral reef or smooth on sand. This makes it better because it can disguise itself in many different places very quickly.",
+      tips: "The 3-Point Answer Formula:\n1. RESTATE: Start by turning the question into your answer\n2. EXPLAIN: Answer in YOUR OWN words\n3. PROVE IT: Use specific details from the passage\n\nThis question asks you to COMPARE - show why the octopus is BETTER than the other animals.",
+      scoredExamples: {
+        three: { label: "3 Points (Great!)", response: "The author thinks the octopus is the best at camouflage because it can do things the other animals cannot. The fox can only change its color, and the walking stick always looks the same. But the octopus can change both its color and its skin texture in less than a second. For example, it can make its skin bumpy to match a coral reef or smooth to match sand. No other animal in the passage can change that fast or in that many ways.", why: "This answer compares the octopus to the other animals, uses specific details from the passage, and clearly explains WHY the octopus is the best." },
+        two: { label: "2 Points (Okay)", response: "The octopus is the best because it can change its color and texture. It can match coral reefs and sandy areas.", why: "This gives some details about the octopus but does not compare it to the other animals. The question asks why it is BETTER than the others, so you need to mention what the fox and walking stick can and cannot do." },
+        one: { label: "1 Point (Needs work)", response: "It can change both its color and the texture of its skin in less than a second. An octopus resting on a bumpy coral reef can make its skin look bumpy and the same color as the coral.", why: "This is mostly copied from the passage! Remember, you need to use YOUR OWN words to explain the answer. Copying only gets 1 point." }
+      }
+    },
+    { id: "esa4", passageId: "p2", question: "Based on the passage, explain TWO reasons why a doctor might want to use a surgical robot. Use details from the passage to support your answer.", category: "Short Answer", difficulty: 2,
+      keywords: ["robot", "doctor", "small", "spaces", "reach", "cuts", "smaller", "heal", "faster", "pain", "less", "surgery", "reason", "body", "hands", "camera"],
+      keywordMin: 3,
+      passagePhrases: ["robots can help doctors during surgery", "These special robots don't work on their own", "A doctor controls them using a computer", "robots can reach small spaces inside the body more easily", "the cuts made by robots are often smaller than cuts made by hand", "Smaller cuts mean patients heal faster and feel less pain"],
+      sampleAnswer: "The passage gives two reasons why doctors might want to use surgical robots. The first reason is that robots can reach small spaces inside the body more easily than a doctor's hands. The second reason is that the cuts made by robots are often smaller than cuts made by hand. This is important because smaller cuts mean patients heal faster and feel less pain. Both reasons show that robots can help make surgery safer and easier for patients.",
+      tips: "The 3-Point Answer Formula:\n1. RESTATE: Start by turning the question into your answer\n2. EXPLAIN: Answer in YOUR OWN words\n3. PROVE IT: Use specific details from the passage\n\nThis question says TWO reasons - make sure you include BOTH! Number them so it is clear.",
+      scoredExamples: {
+        three: { label: "3 Points (Great!)", response: "There are two reasons a doctor might use a surgical robot. First, robots can reach small spaces inside the body more easily than human hands. This helps doctors work in tight areas. Second, the cuts made by robots are often smaller. The passage says that smaller cuts mean patients heal faster and feel less pain. These two reasons show that surgical robots help make surgery better for patients.", why: "This answer clearly gives TWO reasons, numbers them so they are easy to find, uses details from the passage, and explains them in the student's own words." },
+        two: { label: "2 Points (Okay)", response: "A doctor would use a robot because the cuts are smaller and patients heal faster.", why: "This gives one reason with some detail but does not clearly state TWO separate reasons. Adding the reason about reaching small spaces would make it a 3-point answer." },
+        one: { label: "1 Point (Needs work)", response: "Because robots are helpful and they make surgery easier.", why: "This answer is too vague. It does not use any specific details from the passage. Always go back to the passage and find the exact reasons the author gives!" }
+      }
+    },
+    { id: "esa5", passageId: "p5", question: "Explain how Jasmine's star map changed over time and why. Use details from the passage to support your answer.", category: "Short Answer", difficulty: 2,
+      keywords: ["star", "map", "constellation", "Big Dipper", "North Star", "arrow", "moved", "shifted", "Earth", "Sun", "month", "changed", "telescope", "drew", "labeled", "teacher", "impressed"],
+      keywordMin: 3,
+      passagePhrases: ["Jasmine had always been curious about the night sky", "A constellation is a group of stars that forms a pattern", "Let's find the Big Dipper first", "The North Star is special because it stays in almost the same spot", "she noticed something surprising - the constellations had shifted position slightly", "That's because Earth is moving around the Sun", "Jasmine added arrows to her map to show how the constellations moved"],
+      sampleAnswer: "Jasmine's star map changed over time because she kept adding to it and noticed new things. At first, she just drew the stars and labeled the constellations she could find, like the Big Dipper and the North Star. But after a month of watching, she noticed that the constellations had shifted position. Her dad explained that this happens because Earth moves around the Sun, so we see different parts of the sky. Jasmine then added arrows to her map to show how the constellations moved. This made her map special because it showed change over time, not just one night's view.",
+      tips: "The 3-Point Answer Formula:\n1. RESTATE: Start by turning the question into your answer\n2. EXPLAIN: Answer in YOUR OWN words\n3. PROVE IT: Use specific details from the passage\n\nThis question asks about change over time - talk about what the map looked like at FIRST and what it looked like LATER.",
+      scoredExamples: {
+        three: { label: "3 Points (Great!)", response: "Jasmine's star map changed because she kept watching the sky and learning new things. At first, she drew the stars and labeled constellations like the Big Dipper. After a month, she noticed the constellations had shifted. Her dad told her this was because Earth moves around the Sun, so we see different parts of the sky. Then Jasmine added arrows to show how the constellations moved. Her teacher was so impressed that she asked Jasmine to share it with the class.", why: "This answer explains the change over time with specific details, tells WHY the change happened, and follows the passage from beginning to end." },
+        two: { label: "2 Points (Okay)", response: "Jasmine noticed the constellations moved after a month. She added arrows to show the movement.", why: "This mentions the change but does not explain WHY the constellations moved (because Earth orbits the Sun). Adding that explanation would earn the third point." },
+        one: { label: "1 Point (Needs work)", response: "Jasmine made a star map and her teacher liked it.", why: "This does not explain HOW the map changed over time. The question specifically asks about the changes, so you need to describe what was different between the beginning and later." }
+      }
+    },
   ],
   math: [
     { id: "m1", question: "What is 456 rounded to the nearest hundred?", options: ["400", "450", "460", "500"], correct: 3, explanation: "Look at the tens digit (5). Since 5 or more means round UP, 456 rounds up to 500. Remember: look at the digit to the RIGHT of the place you are rounding to!", category: "Numbers & Operations", difficulty: 1 },
@@ -172,6 +229,7 @@ function StrategyTip({ type, onGo }) {
   const data = {
     ela: { icon: "\u{1F4D6}", title: "Reading Mission Checklist", items: ["Read ALL the answer choices before picking one", "Look for key words: NOT, BEST, MOST, MAIN", "You can ALWAYS go back to the passage!", "Cross out answers you KNOW are wrong"] },
     math: { icon: "\u{1F522}", title: "Math Mission Checklist", items: ["Read the WHOLE problem - don't rush!", "Underline what the question is ASKING", "Show your work on scratch paper", "Check: Does your answer make SENSE?"] },
+    short_answer: { icon: "\u270F\uFE0F", title: "Short Answer Power-Up", items: ["RESTATE: Turn the question into your answer", "EXPLAIN: Use YOUR OWN words (do NOT just copy!)", "PROVE IT: Include specific details from the passage", "Write at least 2-3 sentences for full credit"] },
   };
   const d = data[type] || data.ela;
   return (
@@ -191,6 +249,61 @@ function StrategyTip({ type, onGo }) {
   );
 }
 
+function evaluateSA(answer, question, passage) {
+  const text = (answer || "").trim().toLowerCase();
+  const words = text.split(/\s+/).length;
+
+  // Check for obvious non-answers
+  const nonAnswers = ["i don't know", "i dont know", "idk", "no", "yes", "nothing", "i don't understand", "help", "skip", "none", "n/a", "na", "no answer", "i can't", "i cant"];
+  if (nonAnswers.some(na => text === na || text === na + ".")) {
+    return { score: 0, feedback: "It looks like you didn't try to answer the question. Go back and read the passage, then try to answer in your own words. You can do it!" };
+  }
+
+  // Check minimum length (need at least 15 words for a real attempt)
+  if (words < 8) {
+    return { score: 0, feedback: "Your answer is too short. A good answer needs at least 2-3 sentences. Try to restate the question, explain your answer, and use details from the passage." };
+  }
+
+  // Check for copying from passage
+  let copyCount = 0;
+  const passagePhrases = question.passagePhrases || [];
+  for (const phrase of passagePhrases) {
+    if (text.includes(phrase.toLowerCase())) {
+      copyCount++;
+    }
+  }
+  const isMostlyCopied = copyCount >= 3 || (passagePhrases.length > 0 && copyCount >= passagePhrases.length * 0.5);
+
+  // Check for keywords (shows they understood the content)
+  const keywords = question.keywords || [];
+  let keywordHits = 0;
+  for (const kw of keywords) {
+    if (text.includes(kw.toLowerCase())) {
+      keywordHits++;
+    }
+  }
+  const keywordMin = question.keywordMin || 3;
+
+  // Scoring logic
+  if (isMostlyCopied && keywordHits < keywordMin + 2) {
+    return { score: 1, feedback: "It looks like you copied a lot of sentences directly from the passage. On the real PSSA, copying only earns 1 point. Try rewriting the answer in YOUR OWN words, then mention details from the passage to support your idea." };
+  }
+
+  if (keywordHits < 2) {
+    return { score: 1, feedback: "Your answer doesn't include enough details from the passage. Remember the formula: RESTATE the question, EXPLAIN in your own words, then PROVE IT with specific details from the text." };
+  }
+
+  if (words < 20 || keywordHits < keywordMin) {
+    return { score: 2, feedback: "Good start! You included some details from the passage. To earn full points, try to add more specific details and make sure you fully answer every part of the question." };
+  }
+
+  if (words >= 20 && keywordHits >= keywordMin && !isMostlyCopied) {
+    return { score: 3, feedback: "Great job! You answered in your own words and included specific details from the passage. This is exactly what the PSSA is looking for!" };
+  }
+
+  return { score: 2, feedback: "Solid effort! Your answer shows understanding. Try to include a few more specific details from the passage to earn full points." };
+}
+
 function Question({ q, passage, onAnswer, num, total }) {
   const [sel, setSel] = useState(null);
   const [shown, setShown] = useState(false);
@@ -199,16 +312,22 @@ function Question({ q, passage, onAnswer, num, total }) {
   const [inP2, setInP2] = useState(false);
   const [text, setText] = useState("");
   const [sampleShown, setSampleShown] = useState(false);
+  const [saScore, setSaScore] = useState(null);
   const isSA = !!q.sampleAnswer;
 
   const submit = () => {
-    if (isSA) { setSampleShown(true); return; }
+    if (isSA) {
+      const result = evaluateSA(text, q, passage);
+      setSaScore(result);
+      setSampleShown(true);
+      return;
+    }
     if (sel === null) return;
     setShown(true);
   };
   const submitP2 = () => { if (p2Sel === null) return; setP2Shown(true); };
   const next = () => {
-    if (isSA) { onAnswer(text.trim().length > 10); return; }
+    if (isSA) { onAnswer(saScore && saScore.score >= 2); return; }
     if (q.isEBSR && shown && !inP2) { setInP2(true); return; }
     if (q.isEBSR && p2Shown) { onAnswer(sel === q.correct && p2Sel === q.part2.correct); return; }
     onAnswer(sel === q.correct);
@@ -262,14 +381,58 @@ function Question({ q, passage, onAnswer, num, total }) {
 
       {isSA && sampleShown && (
         <div>
-          <div style={{ background: "rgba(255,215,0,0.1)", borderRadius: 14, padding: "14px 18px", marginBottom: 12, border: "1px solid rgba(255,215,0,0.2)" }}>
-            <p style={{ color: "#ffd700", fontSize: 14, fontFamily: "'Fredoka', sans-serif", marginBottom: 6 }}>Great effort! Here is an example of a strong answer:</p>
-            <p style={{ color: "#d0d8e8", fontSize: 14, lineHeight: 1.6, fontFamily: "'Nunito', sans-serif", margin: 0 }}>{q.sampleAnswer}</p>
-          </div>
+          {/* Score banner */}
+          {saScore && (
+            <div style={{ background: saScore.score >= 3 ? "rgba(46,204,113,0.12)" : saScore.score >= 2 ? "rgba(230,180,30,0.12)" : "rgba(231,76,60,0.12)", borderRadius: 14, padding: "14px 18px", marginBottom: 12, border: "1px solid " + (saScore.score >= 3 ? "rgba(46,204,113,0.3)" : saScore.score >= 2 ? "rgba(230,180,30,0.3)" : "rgba(231,76,60,0.3)") }}>
+              <p style={{ color: saScore.score >= 3 ? "#2ecc71" : saScore.score >= 2 ? "#e6b41e" : "#e74c3c", fontSize: 18, fontFamily: "'Fredoka', sans-serif", marginBottom: 6 }}>
+                {saScore.score >= 3 ? "🌟 Score: 3 out of 3 — Amazing!" : saScore.score >= 2 ? "⭐ Score: 2 out of 3 — Good effort!" : saScore.score >= 1 ? "📝 Score: 1 out of 3 — Keep practicing!" : "🚀 Score: 0 out of 3 — Try again!"}
+              </p>
+              <p style={{ color: "#c8d4e8", fontSize: 14, lineHeight: 1.6, fontFamily: "'Nunito', sans-serif", margin: 0 }}>{saScore.feedback}</p>
+            </div>
+          )}
+
+          {/* Their answer */}
           <div style={{ background: "rgba(255,255,255,0.05)", borderRadius: 12, padding: "10px 14px", marginBottom: 12 }}>
-            <p style={{ color: "#a0b0d0", fontSize: 12, marginBottom: 4 }}>Your answer:</p>
-            <p style={{ color: "#c8d4e8", fontSize: 14, fontFamily: "'Nunito', sans-serif", margin: 0 }}>{text}</p>
+            <p style={{ color: "#8fb8ff", fontSize: 13, fontFamily: "'Fredoka', sans-serif", marginBottom: 4 }}>Your Answer:</p>
+            <p style={{ color: "#c8d4e8", fontSize: 14, fontFamily: "'Nunito', sans-serif", margin: 0, lineHeight: 1.6 }}>{text}</p>
           </div>
+
+          {/* 3-point example */}
+          {q.scoredExamples && (
+            <div>
+              <p style={{ color: "#ffd700", fontSize: 15, fontFamily: "'Fredoka', sans-serif", marginBottom: 10 }}>📊 How is this question scored? Compare your answer:</p>
+
+              {/* 3 points */}
+              <div style={{ background: "rgba(46,204,113,0.08)", borderRadius: 12, padding: "12px 16px", marginBottom: 8, border: "1px solid rgba(46,204,113,0.2)" }}>
+                <p style={{ color: "#2ecc71", fontSize: 14, fontFamily: "'Fredoka', sans-serif", marginBottom: 4 }}>🌟 {q.scoredExamples.three.label}</p>
+                <p style={{ color: "#d0d8e8", fontSize: 13, lineHeight: 1.6, fontFamily: "'Nunito', sans-serif", marginBottom: 6 }}>{q.scoredExamples.three.response}</p>
+                <p style={{ color: "#7ec8a0", fontSize: 12, fontFamily: "'Nunito', sans-serif", margin: 0, fontStyle: "italic" }}>Why this scored 3: {q.scoredExamples.three.why}</p>
+              </div>
+
+              {/* 2 points */}
+              <div style={{ background: "rgba(230,180,30,0.08)", borderRadius: 12, padding: "12px 16px", marginBottom: 8, border: "1px solid rgba(230,180,30,0.2)" }}>
+                <p style={{ color: "#e6b41e", fontSize: 14, fontFamily: "'Fredoka', sans-serif", marginBottom: 4 }}>⭐ {q.scoredExamples.two.label}</p>
+                <p style={{ color: "#d0d8e8", fontSize: 13, lineHeight: 1.6, fontFamily: "'Nunito', sans-serif", marginBottom: 6 }}>{q.scoredExamples.two.response}</p>
+                <p style={{ color: "#c8a848", fontSize: 12, fontFamily: "'Nunito', sans-serif", margin: 0, fontStyle: "italic" }}>Why this scored 2: {q.scoredExamples.two.why}</p>
+              </div>
+
+              {/* 1 point */}
+              <div style={{ background: "rgba(231,76,60,0.08)", borderRadius: 12, padding: "12px 16px", marginBottom: 12, border: "1px solid rgba(231,76,60,0.15)" }}>
+                <p style={{ color: "#e88070", fontSize: 14, fontFamily: "'Fredoka', sans-serif", marginBottom: 4 }}>📝 {q.scoredExamples.one.label}</p>
+                <p style={{ color: "#d0d8e8", fontSize: 13, lineHeight: 1.6, fontFamily: "'Nunito', sans-serif", marginBottom: 6 }}>{q.scoredExamples.one.response}</p>
+                <p style={{ color: "#c87878", fontSize: 12, fontFamily: "'Nunito', sans-serif", margin: 0, fontStyle: "italic" }}>Why this scored 1: {q.scoredExamples.one.why}</p>
+              </div>
+            </div>
+          )}
+
+          {/* Fallback for old-style questions without scored examples */}
+          {!q.scoredExamples && q.sampleAnswer && (
+            <div style={{ background: "rgba(255,215,0,0.1)", borderRadius: 14, padding: "14px 18px", marginBottom: 12, border: "1px solid rgba(255,215,0,0.2)" }}>
+              <p style={{ color: "#ffd700", fontSize: 14, fontFamily: "'Fredoka', sans-serif", marginBottom: 6 }}>Great effort! Here is an example of a strong answer:</p>
+              <p style={{ color: "#d0d8e8", fontSize: 14, lineHeight: 1.6, fontFamily: "'Nunito', sans-serif", margin: 0 }}>{q.sampleAnswer}</p>
+            </div>
+          )}
+
           <button onClick={next} style={{ display: "block", width: "100%", padding: 14, background: "linear-gradient(135deg, #4a7aff, #6c5ce7)", color: "#fff", border: "none", borderRadius: 12, fontSize: 16, fontFamily: "'Fredoka', sans-serif", cursor: "pointer", fontWeight: 600 }}>Continue →</button>
         </div>
       )}
@@ -379,8 +542,8 @@ function Results({ results, progress, onDone }) {
 }
 
 function Dashboard({ onBack }) {
-  const mP = loadP("Player 1");
-  const dP = loadP("Player 2");
+  const mP = loadP("Matthew");
+  const dP = loadP("Malcolm");
 
   const Card = ({ name, p, emoji }) => {
     const eP = p.elaAnswered > 0 ? Math.round((p.elaCorrect / p.elaAnswered) * 100) : 0;
@@ -441,8 +604,8 @@ function Dashboard({ onBack }) {
         <p style={{ color: "#c8d4e8", fontSize: 13, margin: 0, lineHeight: 1.6 }}>ELA: April 22-24, 2026 &nbsp;|&nbsp; Math: April 29-30, 2026</p>
         <p style={{ color: "#a0a8c0", fontSize: 12, margin: "4px 0 0" }}>Spring break (off): March 27 - April 3</p>
       </div>
-      <Card name="Player 1" p={mP} emoji="👩🏾‍🚀" />
-      <Card name="Player 2" p={dP} emoji="👩🏾‍🚀" />
+      <Card name="Matthew" p={mP} emoji="👨‍🚀" />
+      <Card name="Malcolm" p={dP} emoji="🧑‍🚀" />
       <div style={{ background: "rgba(255,255,255,0.04)", borderRadius: 14, padding: 18, border: "1px solid rgba(100,140,255,0.1)" }}>
         <h4 style={{ color: "#8fb8ff", fontFamily: "'Fredoka', sans-serif", fontSize: 15, marginBottom: 10 }}>💡 Tips for Parents</h4>
         <div style={{ color: "#c8d4e8", fontFamily: "'Nunito', sans-serif", fontSize: 13, lineHeight: 1.8 }}>
@@ -493,7 +656,7 @@ export default function App() {
       const n = m === "mixed" ? sch.elaPerDay : sch.elaPerDay + sch.mathPerDay;
       list.push(...rPool.slice(0, Math.ceil(n * 0.6)));
       list.push(...cPool.slice(0, Math.ceil(n * 0.3)));
-      if (week >= 7) list.push(...saPool.slice(0, 1));
+      if (week >= 3) list.push(...saPool.slice(0, 1));
     }
     if (m === "math" || m === "mixed") {
       const mPool = avail(QUESTIONS.math).sort(() => Math.random() - 0.5);
@@ -599,7 +762,7 @@ export default function App() {
             <h1 style={{ color: "#e8f0ff", fontFamily: "'Fredoka', sans-serif", fontSize: 30, marginBottom: 4 }}>PSSA Space Mission</h1>
             <p style={{ color: "#8fb8ff", fontSize: 16, marginBottom: 36 }}>Choose your astronaut to begin!</p>
             <div style={{ display: "flex", gap: 20, justifyContent: "center", flexWrap: "wrap" }}>
-              {[{ n: "Player 1", e: "👩🏾‍🚀", c: "#4a7aff" }, { n: "Player 2", e: "👩🏾‍🚀", c: "#a855f7" }].map(pl => {
+              {[{ n: "Matthew", e: "👨‍🚀", c: "#4a7aff" }, { n: "Malcolm", e: "🧑‍🚀", c: "#a855f7" }].map(pl => {
                 const pr = loadP(pl.n);
                 return (
                   <button key={pl.n} onClick={() => pick(pl.n)}
@@ -627,7 +790,7 @@ export default function App() {
               <button onClick={() => setScreen("dashboard")} style={{ padding: "7px 14px", background: "rgba(255,255,255,0.06)", color: "#8898b8", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 8, fontSize: 13, cursor: "pointer" }}>📊 Dashboard</button>
             </div>
             <div style={{ textAlign: "center", marginBottom: 24 }}>
-              <div style={{ fontSize: 48, marginBottom: 6 }}>{player === "Player 1" ? "👩🏾‍🚀" : "👩🏾‍🚀"}</div>
+              <div style={{ fontSize: 48, marginBottom: 6 }}>{player === "Matthew" ? "👨‍🚀" : "🧑‍🚀"}</div>
               <h2 style={{ color: "#e8f0ff", fontFamily: "'Fredoka', sans-serif", fontSize: 24, marginBottom: 2 }}>Welcome, {player}!</h2>
               <p style={{ color: "#8fb8ff", fontSize: 14 }}>Week {week}: {sch.focus}</p>
             </div>
@@ -677,7 +840,7 @@ export default function App() {
 
         {screen === "strategy" && (
           <div style={{ paddingTop: "5vh" }}>
-            <StrategyTip type={mode === "math" ? "math" : "ela"} onGo={() => setScreen("practice")} />
+            <StrategyTip type={mode === "math" ? "math" : qs.some(q => q.sampleAnswer) ? "short_answer" : "ela"} onGo={() => setScreen("practice")} />
           </div>
         )}
 
